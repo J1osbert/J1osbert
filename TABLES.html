@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+   <HEAD>
+    <TITLE>ADDING TABLES TO A PAGE</TITLE>
+</HEAD> 
+    <BODY>
+         <!--BASIC TABLE STRUCTURE-->
+        <TABLE>
+            <TR>
+                <TD>15</TD>
+                <TD>15</TD>
+                <TD>30</TD>
+            </TR>
+            <TR>
+                <TD>45</TD>
+                <TD>60</TD>
+                <TD>45</TD>
+            </TR>
+            <TR>
+                <TD>60</TD>
+                <TD>90</TD>
+                <TD>90</TD>
+            </TR>
+        </TABLE>
+         <!--TABLE HEADINGS-->
+        <TABLE>
+            <TR>
+             <TH></TH>
+             <TH SCOPE="COL">SATURDAY</TH>
+             <TH SCOPE="COL">SUNDAY</TH>
+            </TR>
+            <TR>
+                <TH SCOPE="ROW">TICKETS SOLD:</TH>
+                <TD>120</TD>
+                <TD>135</TD>
+            </TR>
+            <TR>
+                <TH SCOPE="ROW">TOTAL SALES:</TH>
+                <TD>$600</TD>
+                <TD>$675</TD>
+            </TR>
+        </TABLE>
+        <BR />
+         <!--SPANNING COLUMNS-->
+        <TABLE>
+            <TR>
+                <TH></TH>
+                <TH>9AM</TH>
+                <TH>10AM</TH>
+                <TH>11AM</TH>
+                <TH>12AM</TH>
+            </TR>
+            <TR>
+                <TH>MONDAY</TH>
+                <TD COLSPAN="2">GEOGRAPHY</TD>
+                <TD >MATH</TD>
+                <TD>ART</TD>
+            </TR>
+            <TR>
+                <TH>TUESDAY</TH>
+                <TD COLSPAN="3">GYM</TD>
+                <TD>HOME ECONS</TD>
+            </TR>
+        </TABLE>
+        <BR />
+         <!--SPANNING ROWS-->
+        <TABLE>
+            <TR>
+                <TH></TH>
+                <TH>ABC</TH>
+                <TH>BBC</TH>
+                <TH>CNN</TH>
+            </TR>
+                      <TR>
+                <TH>6PM - 7PM</TH>
+                <TD ROWSPAN="2">MOVIE</TD>
+                <TD>COMEDY</TD>
+                <TD>NEWS</TD>
+            </TR>
+            <BR />
+            <TR>
+                <TH>7PM - 8PM</TH>
+                <TD>SPORT</TD>
+                <TD>CURRENT AFFAIRS</TD>
+            </TR>
+        </TABLE>
+        <BR />
+        <HR />
+         <!--LONG TABLES-->
+         <TABLE>
+            <THEAD>
+                <TR>
+                    <TH>DATE</TH>
+                    <TH>INCOME</TH>
+                    <TH>EXPENDITURE</TH>
+                </TR>
+            </THEAD>
+            <TBODY>
+                <TR>
+                    <TH>1ST JANUARY</TH>
+                    <TD>250</TD>
+                    <TD>36</TD>
+                </TR>
+                <TR>
+                    <TH>2ND JANUARY</TH>
+                    <TD>285</TD>
+                    <TD>48</TD>
+                </TR>
+                <!--ADDITIONAL ROWS AS ABOVE-->
+                <TR>
+                    <TH>3RD JANUARY</TH>
+                    <TD>480</TD>
+                    <TD>80</TD>
+                </TR>
+                <TR>
+                    <TH>4TH JANUARY</TH>
+                    <TD>809</TD>
+                    <TD>67</TD>
+                </TR>
+            </TBODY>
+                <TFOOT>
+                    <TR>
+                        <TD></TD>
+                        <TD>7824</TD>
+                        <TD>1241</TD>
+                
+                    </TR>
+                </TFOOT>
+         </TABLE>
+         <!--WIDTH & SPACING-->
+         <TABLE WIDTH="400" CELLPADDING="10" CELLSPACING="5" >
+            <TR>
+                <TH WIDTH="150"></TH>
+                <TH>WITHDRAWN</TH>
+                <TH>CREDIT</TH>
+                <TH WIDTH="150">BALANCE</TH>
+            </TR>
+            <TR>
+                <TH>JANUARY</TH>
+                <TD>250.00</TD>
+                <TD>660.00</TD>
+                <TD>410</TD>
+            </TR>
+            <TR>
+                <TH>FEBRUARY</TH>
+                <TD>135.00</TD>
+                <TD>895.00</TD>
+                <TD>1170.15</TD>
+            </TR>
+         </TABLE>
+         <BR />
+         <HR >
+            <TABLE BORDER="2" BGCOLOR="#EFEFEF">
+                <TR>
+                    <TH WIDTH="150"></TH>
+                    <TH>WITHDRAWN</TH>
+                    <TH>CREDIT</TH>
+                    <TH WIDTH="150" BGCOLOR="#CCCCCC">BALANCE</TH>
+                </TR>
+                <TR>
+                    <TH>JANUARY</TH>
+                    <TD>250.00</TD>
+                    <TD>660.50</TD>
+                    <TD BGCOLOR="#CCCCCC">410.50</TD>
+                </TR>
+                <TR>
+                    <TH>FEBRUARY</TH>
+                    <TD>135.55</TD>
+                    <TD>895.20</TD>
+                    <TD BGCOLOR="#CCCCCC">1170.15</TD>
+                </TR>
+            </TABLE>
+    </BODY>
+   
+</HTML>

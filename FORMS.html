@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<HTML LANG="EN">
+   <HEAD>
+    <TITLE>ADDING FORMS TO A PAGE</TITLE>
+</HEAD> 
+<HR />
+    <BODY BGCOLOR="EFEFEF">
+        <!--FORM STRUCTURE-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/SUBSCRIBE.PHP" METHOD="GET">
+            <P ALIGN="MIDDLE"><B>THIS IS WHERE THE FORM CONTROL WILL APPEAR</B></P>
+        </FORM>
+        <HR />
+        <!--TEXT INPUT-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/LOGIN.PHP"></FORM>
+            <P ALIGN="MIDDLE">USERNAME:
+                <INPUT TYPE="TEXT" NAME="USERNAME" SIZE="15" MAXLENGTH="30" />
+            </P>
+        </FORM>
+        <HR />
+        <!--PASSWORD INPUT-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/LOGIN.PHP">
+            <P ALIGN="MIDDLE">USERNAME:
+                <INPUT TYPE="TEXT" NAME="USERNAME" SIZE="15" maxlength="30" />
+            </P>
+            <P ALIGN="MIDDLE">PASSWORD:
+                <INPUT TYPE="TEXT" NAME="PASSWORD" SIZE="15" maxlength="30"/>
+            </P>
+        </FORM>
+        <HR />
+        <!--TEXT AREA-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/COMMENTS.PHP">
+            <P>WHAT DID YOU THINK OF THIS GIG</P>
+            <TEXTAREA NAME="COMMENTS" BORDER="2" COLS="20" ROWS="4">ENTER YOUR COMMENTS...</TEXTAREA>
+        </FORM>
+        <HR />
+        <!--RADIO BUTTON-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/PROFILE.PHP">
+            <P>PLEASE SELECT YOUR FAVOURITE GENRE:
+                <BR />
+                <INPUT TYPE="RADIO" NAME="GENRE" VALUE="ROCK" CHECKED="CHECKED" />ROCK
+                <INPUT TYPE="RADIO" NAME="GENRE" VALUE="POP" />POP
+                <INPUT TYPE="RADIO" NAME="GENRE" VALUE="CLASSICAL" />CLASSICAL
+            </P>
+        </FORM>
+        <HR />
+        <!--CHECKBOX-->
+        <FORM ACTION="HTTM://WWW.EXAMPLE.COM/PROFILE.PHP">
+            <P>PLEASE SELECT YOUR FAVOURITE MUSIC SERVICE(S):
+                <BR />
+                <INPUT TYPE="CHECKBOX" NAME="SERVICE" VALUE="ITUNES" CHECKED="CHECKED" />ITUNES
+                <INPUT TYPE="CHECKBOX" NAME="SERVICE" VALUE="SPOTIFY" />SPOTIFY
+                <INPUT TYPE="CHECKBOX" NAME="SERVICE" VALUE="APPLE MUSIC" />APPLE MUSIC
+
+            </P>
+        </FORM>
+        <BR />
+        <HR />
+        <!--DROP DOWN LIST BOX-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/PROFILE.PHP">
+            <P>WHAT DEVICE DO YOU LISTEN TO MUSIC ON?</P>
+            <SELECT NAME="DEVICES">
+                <OPTION VALUE="IPOD">IPOD</OPTION>
+                <OPTION VALUE="RADIO">RADIO</OPTION>
+                <OPTION VALUE="COMPUTER">COMPUTER</OPTION>
+            </SELECT>
+        </FORM>
+        <BR />
+        <HR />
+        <!--MULTIPLE SELECT BOX-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/PROFILE.PHP">
+            <P>DO YOU PLAY ANY OF THE FOLOWING INSTRUMENTS?
+                <BR />(YOU CAN SELECT MORE THAN ONE OPTION
+                <BR /> BY HOLDING DONW CONTROL ON A PC OR COMMAND
+                <BR /> KEY ON A MAC WHILE SELECTING DIFFIRENT OTIONS.)
+            </P>
+            <SELECT NAME="INSTRUMENTS" SIZE="3" MULTIPLE="MULTIPLE">
+                <OPTION VALUE="GUITAR" SELECTED="SELECTED">GUITAR</OPTION>
+                <OPTION VALUE="DRUMS">DRUMS</OPTION>
+                <OPTION VALUE="KEYBOARD" SELECTED="SELECTED">KEYBOARD</OPTION>
+                <OPTION VALUE="BASS">BASS</OPTION>
+            </SELECT>
+        </FORM>
+        <BR />
+        <HR />
+        <!--FILE INPUT BOX AND SUBMIT BUTTON-->
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/UPLOAD.PHP" METHOD="POST">
+            <P>UPLOAD YOUR SONG IN MP3 FORMAT</P>
+            <INPUT TYPE="FILE" NAME="USER-SONG" /><BR />
+            <INPUT TYPE="SUBMIT" VALUE="UPLOAD" />
+            <INPUT TYPE="IMAGE" SRC="IMAGES/SUBSCRIBE.JPG" WIDTH="100" HEIGHT="20" />
+        </FORM>
+        <!--BUTTON & HIDDEN CONTROLS-->
+        <BR />
+        <HR />
+        <FORM ACTION="HTTP://WWW.EXAMPLE.COM/ADD.PHP">
+            <BUTTON><IMG SRC="IMAGES/ADD.GIF" ALT="ADD" WIDTH="10" HEIGHT="10" /></BUTTON>
+            <INPUT TYPE="HIDDEN" NAME="BOOKMARK" VALUE="LYRICS" />
+        </FORM>
+        <BR />
+        <HR />
+        <LABEL>AGE: <INPUT TYPE="NUMBER" NAME="AGE" maxlength="3"> </LABEL>
+            <BR />
+            GENDER:
+            <INPUT TYPE="RADIO" ID="FEMALE" NAME="GENDER" VALUE="F">
+                <LABEL FOR="FEMALE">FEMALE</LABEL>
+            <INPUT TYPE="RADIO" ID="MALE" NAME="GENDER" VALUE="M">
+                <LABEL FOR="MALE">MALE</LABEL>
+        
+    </BODY>
+   
+</HTML>
